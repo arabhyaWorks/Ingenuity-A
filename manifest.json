@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Ingenuity",
+    "version": "1.0",
+    "description": "Extracts YouTube captions and converts them to TTS audio while muting original audio.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/watch*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
