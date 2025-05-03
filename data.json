@@ -1,0 +1,34 @@
+{
+    "pipelineResponse": [
+        {
+            "taskType": "translation",
+            "config": null,
+            "output": [
+                {
+                    "source": "My name is arabhaya we are building Ingenuity, which a real time language to language translation for video and voice",
+                    "target": "मेरा नाम अरभया है हम इनजेनिटी का निर्माण कर रहे हैं, जो वीडियो और आवाज के लिए भाषा अनुवाद के लिए एक वास्तविक समय की भाषा है।"
+                }
+            ],
+            "audio": null
+        },
+        {
+            "taskType": "tts",
+            "config": {
+                "audioFormat": "wav",
+                "language": {
+                    "sourceLanguage": "hi",
+                    "sourceScriptCode": ""
+                },
+                "encoding": "base64",
+                "samplingRate": 8000
+            },
+            "output": null,
+            "audio": [
+                {
+                    "audioContent":"audioContent",
+                    "audioUri": null
+                }
+            ]
+        }
+    ]
+}

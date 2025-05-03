@@ -21,16 +21,12 @@ body {
   }
   
   .sidebar {
-    position: absolute;
     top: 0;
-    right: -300px; /* Hidden off-screen by default */
-    width: 300px;
+    width: 100%;
     height: 100%;
     background: #f0f0f0;
-    transition: right 0.3s ease; /* Smooth slide-in effect */
     padding: 10px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    z-index: 10; /* Ensures sidebar is on top when visible */
   }
   
   .sidebar.active {
